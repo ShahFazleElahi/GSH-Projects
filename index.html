@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-200 items-center justify-center min-h-screen">
+<header>
+    <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost btn-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Home</a></li>
+              <li><a>tab</a></li>
+              <li><a>tab</a></li>
+              <li><a>tab</a></li>
+              <li><a>tab</a></li>
+              <li><a>tab</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="navbar-center">
+          <a class="btn btn-ghost normal-case text-xl">GAZI SAIFUL HASAN</a>
+        </div>
+        <div class="navbar-end">
+          <button class="btn btn-ghost btn-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+          </button>
+          <button class="btn btn-ghost btn-circle">
+            <div class="indicator">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /></svg>
+              <span class="badge badge-xs badge-primary indicator-item"></span>
+            </div>
+          </button>
+          <label class="swap swap-rotate">
+  
+            <!-- this hidden checkbox controls the state -->
+            <input type="checkbox" />
+            
+            <!-- sun icon -->
+            <svg class="swap-on fill-current w-10 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"/></svg>
+            
+            <!-- moon icon -->
+            <svg class="swap-off fill-current w-10 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"/></svg>
+            
+          </label>
+        </div>
+      </div>
+</header>
+
+
+<main>
+    <div>
+      <div class="tabs tabs-boxed">
+        <a class="tab">Courses</a> 
+        <a class="tab tab-active">Podcast</a> 
+        <a class="tab">Books</a>
+      </div>
+    </div>
+
+
+<!--banner -->
+    <div class="hero min-h-screen bg-base-200">
+        <div class="hero-content flex-col lg:flex-row">
+          <img src="images/Podcast/Bootstrap.png" class="max-w-sm rounded-lg shadow-2xl" />
+          <div>
+            <h1 class="text-5xl font-bold">Box Office News!</h1>
+            <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+            <button class="btn btn-primary">Get Started</button>
+          </div>
+        </div>
+    </div>
+    
+<!--products-->
+<div style="padding: 40px;">
+    <div class="tabs tabs-boxed">
+      <a class="tab">Courses</a> 
+      <a class="tab tab-active">Podcast</a> 
+      <a class="tab">Books</a>
+    </div>
+  </div>
+      <section style="
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      margin-bottom: 50px;
+      margin-top: 50px;
+      height: 600px;
+      ">
+
+      
+      <article class="product">
+        <img style="height: 250px; justify-content: center; align-items: center; text-align: center; margin-left: 30px;" 
+        src="images/Products/book-covers-big-2019101610.jpg" alt="Product 1">
+        <h2 style="margin-top: 20px;">
+            Product 1
+        </h2>
+        <p style="margin-top: 20px;">
+            Lorem ipsum consectetur elit.
+        </p>
+        <span style="margin-top: 20px;" class="price">$19.99</span>
+        <div style="justify-content: space-evenly; text-align: center; align-items: center;">
+            <div class="rating">
+                <input type="radio" name="rating-1" class="mask mask-star" />
+                <input type="radio" name="rating-1" class="mask mask-star" checked />
+                <input type="radio" name="rating-1" class="mask mask-star" />
+                <input type="radio" name="rating-1" class="mask mask-star" />
+                <input type="radio" name="rating-1" class="mask mask-star" />
+              </div> <br>
+        <button style="margin-top: 20px; border-radius: 20px; padding: 10px; border: 0; background-color: #333; color: #f4f4f4;">Add to Cart</button>
+        <button style="margin-top: 20px; border-radius: 20px; padding: 10px; border: 0; background-color: #333; color: #f4f4f4;">Buy Now</button>
+        </div>
+      </article>
+
+      <article class="product">
+        <img style="height: 250px; justify-content: center; align-items: center; text-align: center; margin-left: 30px;" 
+        src="images/Products/book-covers-big-2019101610.jpg" alt="Product 1">
+        <h2 style="margin-top: 20px;">
+            Product 1
+        </h2>
+        <p style="margin-top: 20px;">
+            Lorem ipsum consectetur elit.
+        </p>
+        <span style="margin-top: 20px;" class="price">$19.99</span>
+        <div style="justify-content: space-evenly; text-align: center; align-items: center;">
+            <div class="rating">
+                <input type="radio" name="rating-1" class="mask mask-star" />
+                <input type="radio" name="rating-1" class="mask mask-star" checked />
+                <input type="radio" name="rating-1" class="mask mask-star" />
+                <input type="radio" name="rating-1" class="mask mask-star" />
+                <input type="radio" name="rating-1" class="mask mask-star" />
+              </div> <br>
+        <button style="margin-top: 20px; border-radius: 20px; padding: 10px; border: 0; background-color: #333; color: #f4f4f4;">Add to Cart</button>
+        <button style="margin-top: 20px; border-radius: 20px; padding: 10px; border: 0; background-color: #333; color: #f4f4f4;">Buy Now</button>
+        </div>
+      </article>
+
+      <article class="product">
+        <img style="height: 250px; justify-content: center; align-items: center; text-align: center; margin-left: 30px;" 
+        src="images/Products/book-covers-big-2019101610.jpg" alt="Product 1">
+        <h2 style="margin-top: 20px;">
+            Product 1
+        </h2>
+        <p style="margin-top: 20px;">
+            Lorem ipsum consectetur elit.
+        </p>
+        <span style="margin-top: 20px;" class="price">$19.99</span>
+        <div style="justify-content: space-evenly; text-align: center; align-items: center;">
+            <div class="rating">
+                <input type="radio" name="rating-1" class="mask mask-star" />
+                <input type="radio" name="rating-1" class="mask mask-star" checked />
+                <input type="radio" name="rating-1" class="mask mask-star" />
+                <input type="radio" name="rating-1" class="mask mask-star" />
+                <input type="radio" name="rating-1" class="mask mask-star" />
+              </div> <br>
+        <button style="margin-top: 20px; border-radius: 20px; padding: 10px; border: 0; background-color: #333; color: #f4f4f4;">Add to Cart</button>
+        <button style="margin-top: 20px; border-radius: 20px; padding: 10px; border: 0; background-color: #333; color: #f4f4f4;">Buy Now</button>
+        </div>
+      </article>
+
+      <article class="product">
+        <img style="height: 250px; justify-content: center; align-items: center; text-align: center; margin-left: 30px;" 
+        src="images/Products/book-covers-big-2019101610.jpg" alt="Product 1">
+        <h2 style="margin-top: 20px;">
+            Product 1
+        </h2>
+        <p style="margin-top: 20px;">
+            Lorem ipsum consectetur elit.
+        </p>
+        <span style="margin-top: 20px;" class="price">$19.99</span>
+        <div style="justify-content: space-evenly; text-align: center; align-items: center;">
+            <div class="rating">
+                <input type="radio" name="rating-1" class="mask mask-star" />
+                <input type="radio" name="rating-1" class="mask mask-star" checked />
+                <input type="radio" name="rating-1" class="mask mask-star" />
+                <input type="radio" name="rating-1" class="mask mask-star" />
+                <input type="radio" name="rating-1" class="mask mask-star" />
+              </div> <br>
+        <button style="margin-top: 20px; border-radius: 20px; padding: 10px; border: 0; background-color: #333; color: #f4f4f4;">Add to Cart</button>
+        <button style="margin-top: 20px; border-radius: 20px; padding: 10px; border: 0; background-color: #333; color: #f4f4f4;">Buy Now</button>
+        </div>
+      </article>
+
+      
+      </section>
+
+      <!--Course-->
+      <div style="padding: 40px;">
+        <div class="tabs tabs-boxed">
+          <a class="tab">Courses</a> 
+          <a class="tab tab-active">Podcast</a> 
+          <a class="tab">Books</a>
+        </div>
+      <section style="padding: 40px;">
+        <div>
+            <h1 style="font-size: 50px; padding: 20px;">Courses</h1>
+        </div>
+        <div class="flex gap-4 just justify-center items-center">
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card-body">
+                  <h2 class="card-title">Course Title</h2>
+                  <p>Course def</p>
+                </div>
+                <figure><img src="images/Courses/fnoqpmg4xpyuspkw8po4.webp" alt="Shoes" /></figure>
+            </div>
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card-body">
+                  <h2 class="card-title">Course Title</h2>
+                  <p>Course def</p>
+                </div>
+                <figure><img src="images/Courses/fnoqpmg4xpyuspkw8po4.webp" alt="Shoes" /></figure>
+            </div>
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card-body">
+                  <h2 class="card-title">Course Title</h2>
+                  <p>Course def</p>
+                </div>
+                <figure><img src="images/Courses/fnoqpmg4xpyuspkw8po4.webp" alt="Shoes" /></figure>
+            </div>
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card-body">
+                  <h2 class="card-title">Course Title</h2>
+                  <p>Course def</p>
+                </div>
+                <figure><img src="images/Courses/fnoqpmg4xpyuspkw8po4.webp" alt="Shoes" /></figure>
+            </div>
+            
+        </div>
+      
+      </section>
+
+
+
+
+
+      <!--Podcast-->
+      <section class="flex flex-col justify-evenly items-center m-20">
+        <h1 class="text-3xl">PODCAST</h1>
+        <!--Video-->
+        <div class="flex justify-evenly items-center m-20 gap-4">
+            <div class="video-container">
+            <video controls preload="auto" poster="path/to/poster.jpg">
+              <source src="path/to/video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="overlay">
+              <div class="play-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4l10 8-10 8V4z" />
+                </svg>
+              </div>
+            </div>
+            </div>
+            <div class="video-container">
+            <video controls preload="auto" poster="path/to/poster.jpg">
+              <source src="path/to/video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="overlay">
+              <div class="play-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4l10 8-10 8V4z" />
+                </svg>
+              </div>
+            </div>
+            </div>
+            <div class="video-container">
+            <video controls preload="auto" poster="path/to/poster.jpg">
+              <source src="path/to/video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="overlay">
+              <div class="play-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4l10 8-10 8V4z" />
+                </svg>
+              </div>
+            </div>
+            </div>
+            <div class="video-container">
+                <video controls preload="auto" poster="path/to/poster.jpg">
+                  <source src="path/to/video.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <div class="overlay">
+                  <div class="play-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4l10 8-10 8V4z" />
+                    </svg>
+                  </div>
+                </div>
+            </div>
+        </div>
+        
+          
+      </section>
+      <!--downloads/user/new registers-->
+      <section class="dun">
+        <div class="stats shadow">
+        <div class="stat place-items-center w-72">
+          <div class="stat-title">Downloads</div>
+          <div class="stat-value">00</div>
+          <div class="stat-desc">From January 1st to February 1st</div>
+        </div>
+        
+        <div class="stat place-items-center w-72 ">
+          <div class="stat-title">Users</div>
+          <div class="stat-value text-secondary">00</div>
+          <div class="stat-desc text-secondary">↗︎ 0 (0%)</div>
+        </div>
+        
+        <div class="stat place-items-center w-72">
+          <div class="stat-title">New Registers</div>
+          <div class="stat-value">0</div>
+          <div class="stat-desc">↘︎ 0 (0%)</div>
+        </div>
+        
+      </div>
+      </section>
+      
+</main>
+
+
+<footer class="footer footer-center p-10 bg-base-200 text-base-content rounded">
+    <div class="grid grid-flow-col gap-4">
+        <a class="link link-hover">About us</a> 
+        <a class="link link-hover">Contact</a> 
+        <a class="link link-hover">Jobs</a> 
+        <a class="link link-hover">Press kit</a>
+    </div> 
+    <div>
+        <div class="grid grid-flow-col gap-4">
+          <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224,202.66A53.34,53.34,0,1,0,277.36,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31,6.43a54,54,0,0,0-30.41,30.41c-8.28,21-6.43,71.05-6.43,94.33S91,329.26,99.32,350.33a54,54,0,0,0,30.41,30.41c21,8.29,71,6.43,94.31,6.43s73.24,1.93,94.3-6.43a54,54,0,0,0,30.41-30.41c8.35-21,6.43-71.05,6.43-94.33S357.1,182.74,348.75,161.67ZM224,338a82,82,0,1,1,82-82A81.9,81.9,0,0,1,224,338Zm85.38-148.3a19.14,19.14,0,1,1,19.13-19.14A19.1,19.1,0,0,1,309.42,189.74ZM400,32H48A48,48,0,0,0,0,80V432a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V80A48,48,0,0,0,400,32ZM382.88,322c-1.29,25.63-7.14,48.34-25.85,67s-41.4,24.63-67,25.85c-26.41,1.49-105.59,1.49-132,0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61,0-132,1.29-25.63,7.07-48.34,25.85-67s41.47-24.56,67-25.78c26.41-1.49,105.59-1.49,132,0,25.63,1.29,48.33,7.15,67,25.85s24.63,41.42,25.85,67.05C384.37,216.44,384.37,295.56,382.88,322Z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M186.8 202.1l95.2 54.1-95.2 54.1V202.1zM448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zm-42 176.3s0-59.6-7.6-88.2c-4.2-15.8-16.5-28.2-32.2-32.4C337.9 128 224 128 224 128s-113.9 0-142.2 7.7c-15.7 4.2-28 16.6-32.2 32.4-7.6 28.5-7.6 88.2-7.6 88.2s0 59.6 7.6 88.2c4.2 15.8 16.5 27.7 32.2 31.9C110.1 384 224 384 224 384s113.9 0 142.2-7.7c15.7-4.2 28-16.1 32.2-31.9 7.6-28.5 7.6-88.1 7.6-88.1z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM218 271.7L64.2 172.4C66 156.4 79.5 144 96 144H352c16.5 0 30 12.4 31.8 28.4L230 271.7c-1.8 1.2-3.9 1.8-6 1.8s-4.2-.6-6-1.8zm29.4 26.9L384 210.4V336c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V210.4l136.6 88.2c7 4.5 15.1 6.9 23.4 6.9s16.4-2.4 23.4-6.9z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM351.3 199.3v0c0 86.7-66 186.6-186.6 186.6c-37.2 0-71.7-10.8-100.7-29.4c5.3 .6 10.4 .8 15.8 .8c30.7 0 58.9-10.4 81.4-28c-28.8-.6-53-19.5-61.3-45.5c10.1 1.5 19.2 1.5 29.6-1.2c-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3c-9-6-16.4-14.1-21.5-23.6s-7.8-20.2-7.7-31c0-12.2 3.2-23.4 8.9-33.1c32.3 39.8 80.8 65.8 135.2 68.6c-9.3-44.5 24-80.6 64-80.6c18.9 0 35.9 7.9 47.9 20.7c14.8-2.8 29-8.3 41.6-15.8c-4.9 15.2-15.2 28-28.8 36.1c13.2-1.4 26-5.1 37.8-10.2c-8.9 13.1-20.1 24.7-32.9 34c.2 2.8 .2 5.7 .2 8.5z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm90.7 96.7c9.7-2.6 19.9 2.3 23.7 11.6l20 48c3.4 8.2 1 17.6-5.8 23.2L168 231.7c16.6 35.2 45.1 63.7 80.3 80.3l20.2-24.7c5.6-6.8 15-9.2 23.2-5.8l48 20c9.3 3.9 14.2 14 11.6 23.7l-12 44C336.9 378 329 384 320 384C196.3 384 96 283.7 96 160c0-9 6-16.9 14.7-19.3l44-12z"/></svg>
+        </div>
+    </div> 
+    <div>
+        <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+    </div>
+</footer>
+</body>
+</html>
